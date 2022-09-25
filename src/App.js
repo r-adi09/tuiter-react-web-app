@@ -21,5 +21,5 @@ function App() {
     </div>
   );
 }
-
+//end of assignment 1 code.
 export default App;
