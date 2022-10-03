@@ -1,0 +1,80 @@
+.wd-bg{
+    background-color: black;
+    border-color: rgb(47, 51, 54);
+}
+
+.wd-title{
+    margin-top: 12px;
+    margin-left: 16px;
+    font-size: 20px;
+    color: white;
+}
+.wd-handle{
+    color: lightgray;
+    font-size: 13px;
+    margin-top: 16px;
+    margin-left: 16px;
+    border-bottom: 1px solid lightgray;
+}
+.wd-grid{
+    clear: both;
+}
+.wd-image{
+    margin-top: 12px;
+    margin-left: 16px;
+}
+.wd-image-div{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+    width: 4%;
+}
+.wd-author-grid{
+    float: left;
+    width:90%;
+    margin-left: 12px;
+}
+.wd-author {
+    color: white;
+    font-size: 15px;
+}
+.wd-author-handle{
+    color: lightgray;
+    font-size: 15px;
+}
+.wd-main-content{
+    color: white;
+    font-size: 15px;
+    width: 506px;
+}
+.wd-img{
+    border-radius: 10px;
+    width: 504px;
+    height: 264px;
+    margin-top:12px;
+}
+
+.wd-pic-btext{
+    margin-top: 12px;
+    font-size: 15px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    color: white;
+}
+.wd-pic-btitle{
+    margin-top: 12px;
+    font-size: 15px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    color: lightgray;
+}
+.wd-icon{
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.wd-text-round{
+    border-bottom: 1px solid lightgray;
+    border-radius: 10px;
+}
