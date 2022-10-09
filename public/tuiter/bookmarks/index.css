@@ -18,6 +18,8 @@
 }
 .wd-grid{
     clear: both;
+
+
 }
 .wd-image{
     margin-top: 12px;
@@ -34,6 +36,7 @@
     float: left;
     width:90%;
     margin-left: 12px;
+
 }
 .wd-author {
     color: white;
@@ -44,9 +47,11 @@
     font-size: 15px;
 }
 .wd-main-content{
+
     color: white;
     font-size: 15px;
     max-width: 506px;
+
 }
 .wd-img{
     border-radius: 10px;

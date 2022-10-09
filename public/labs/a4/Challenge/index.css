@@ -1,0 +1,77 @@
+.wd-zero-right-border{
+    border-right: 0px transparent;
+}
+.wd-rounded-buttons{
+    border-radius: 20px;
+}
+
+.fg-color-blue{
+    color: mediumslateblue;
+}
+
+.wd-overlay-name{
+    bottom: 60px;
+    color: white;
+    font-size: 40px;
+}
+
+.wd-gray-color{
+    color:gray;
+}
+
+.wd-main-content-borders{
+    border-left: 1px solid #c9d1d9;
+    border-right: 1px solid #c9d1d9;
+}
+
+.wd-rounded-images{
+    border-radius: 50%;
+}
+
+body { background: black }
+
+.wd-list-group .list-group-item{
+    background-color: black;
+}
+
+.wd-nav-item{
+    color: lightgray;
+}
+
+.wd-nav-bg-border{
+    border-bottom: 0;
+}
+
+.wd-nav-highlighted-border{
+    border-bottom: 2px solid rgb(13,110,253);
+    padding: 0px;
+}
+.wd-font-color{
+    color: lightgray;
+}
+
+.wd-search-bar-color{
+    background-color: #c9d1d9;
+}
+
+.wd-foreground-text{
+    color:#c9d1d9;
+}
+
+.wd-image-borders{
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+}
+
+.wd-button-bg{
+    background-color: rgb(13,110,253);
+}
+
+.wd-font-white{
+    color: white;
+}
+
+.wd-follow-button{
+    background-color: white;
+    color: black;
+}
