@@ -1,7 +1,7 @@
 import parse from 'html-react-parser'
 const PostSummary = ({posts}) =>{
 
-    return(
+    return(//comment.
         <div className="list-group-item">
             <div className="row">
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
@@ -16,7 +16,7 @@ const PostSummary = ({posts}) =>{
             </div>
             <div className="row mt-3">
                 <div className={`card mx-auto wd-card-bg p-0 ${posts.cardTitle?'wd-card-border':''}`} id="c1" style={{"width": "30rem"}}>
-                    <img alt={""} src={posts.cardImage} className="card-img-top m-0 p-1" alt="..." style={{"borderRadius": "0px"}} />
+                    <img src={posts.cardImage} className="card-img-top m-0 p-1" alt="..." style={{"borderRadius": "0px"}} />
                     {posts.cardTitle?
                         <div className={`card-body p-3 ${posts.cardTitle?'wd-card-title-border':''}`} id="c2">
                             <h5 className="card-title wd-font-color ">{posts.cardTitle}</h5>
