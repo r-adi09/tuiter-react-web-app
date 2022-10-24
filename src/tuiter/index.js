@@ -24,7 +24,6 @@ function Tuiter() {
 export default Tuiter;*/
 
 import React from "react";
-import ExploreScreen from "./explore";
 import './explore/index.css';
 import {Route, Routes} from "react-router";
 import ExploreComponent from "./explore/ExploreComponent";

@@ -4,7 +4,7 @@ const WhoToFollowListItem = ({who}) => {
         <div className="list-group-item">
             <div className="row">
                 <div className="col-xxl-2 col-xl-2 col-lg-2 px-0">
-                    <img src={who.avatarIcon} className="img-fluid wd-rounded-images" />
+                    <img alt={""} src={who.avatarIcon} className="img-fluid wd-rounded-images" />
                 </div>
                 <div className="col-xxl-8 col-xl-7 col-lg-6">
                     <span className="font-weight-bold wd-font-white">{who.userName}</span>&nbsp;

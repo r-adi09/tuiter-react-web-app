@@ -1,6 +1,6 @@
 import PostSummaryList from "../post-summary-list";
 import StarShip from "../../images/Starship.webp";
-import {BrowserRouter, Link} from "react-router-dom";
+import {Link} from "react-router-dom";
 
 const ExploreComponent = () => {
     return (
