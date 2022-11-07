@@ -27,28 +27,38 @@ import React from "react";
 import './explore/index.css';
 import {Route, Routes} from "react-router";
 import ExploreComponent from "./explore/ExploreComponent";
+import NavigationSidebar from "./navigation-sidebar";
+import WhoToFollowList from "./who-to-follow-list";
 import HomeScreen from "./home";
+import Profile from "./Profile/index"
+import EditProfile from "./EditProfile/index"
+import whoReducer
+    from "./reducers/who-reducer";
+import tuitsReducer from "./tuits/tuits-reducer";
+import profileReducer from "./reducers/profile-reducer";
+import { configureStore }
+    from '@reduxjs/toolkit';
+import {Provider} from "react-redux";
+const store = configureStore(
+    {reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}});
+
 
 function Tuiter(){
-    return(<div>
+    return(
+        <Provider store={store}>
+        <div>
             <Routes>
                 <Route path="home"    element={<HomeScreen/>}/>
                 <Route path="explore" element={<ExploreComponent/>}/>
+                <Route path="profile" element={<Profile/>}/>
+                <Route path="edit" element={<EditProfile/>}/>
             </Routes>
 
         </div>
+        </Provider>
 
     );
 }
 export default Tuiter;
-//import './vendors/bootstrap/bootstrap.min.css';
-/*const index = () => {
-    return (
-        <div>
-            <ExploreScreen/>
-        </div>
-    );
 
-};
-export default index;*/
 
