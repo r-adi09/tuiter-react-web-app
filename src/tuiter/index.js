@@ -27,8 +27,7 @@ import React from "react";
 import './explore/index.css';
 import {Route, Routes} from "react-router";
 import ExploreComponent from "./explore/ExploreComponent";
-import NavigationSidebar from "./navigation-sidebar";
-import WhoToFollowList from "./who-to-follow-list";
+
 import HomeScreen from "./home";
 import Profile from "./Profile/index"
 import EditProfile from "./EditProfile/index"

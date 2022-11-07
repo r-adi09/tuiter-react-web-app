@@ -4,7 +4,6 @@ import HelloReduxExampleComponent
 import hello from "./reducers/hello";
 import todos from "./reducers/todos-reducer";
 import {Provider} from "react-redux";
-import {createStore} from "redux";
 import { configureStore }
     from '@reduxjs/toolkit';
 import Todos from "./todos-component";

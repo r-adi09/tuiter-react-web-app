@@ -5,12 +5,12 @@ import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import IconButton from '@mui/material/IconButton';
 import NavigationSidebar from "../navigation-sidebar";
 import {useSelector} from "react-redux";
-import WhatsHappening from "../home/whats-happening";
+
 import TuitList from "../tuits/tuit-list";
 import WhoToFollowList from "../who-to-follow-list"
-import { format } from 'date-fns'
+
 import {Link} from "react-router-dom";
-import PostSummaryList from "../HomeScreenPostSummaryList";
+
 
 
 const Profile = () => {
@@ -47,12 +47,12 @@ const Profile = () => {
             </div>
 
             <div className="row">
-                <img src="/img/banner1.jpeg" className="img-fluid" width="100%" height="200px" />
+                <img alt={""} src="/img/banner1.jpeg" className="img-fluid" width="100%" height="200px" />
             </div>
 
             <div className="row">
                 <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10" >
-                    <img src="/img/Starship.webp" className="wd-rounded-images position-relative" height="100px" width="100px" style={{"bottom":"1rem"}}/>
+                    <img alt={""} src="/img/Starship.webp" className="wd-rounded-images position-relative" height="100px" width="100px" style={{"bottom":"1rem"}}/>
                 </div>
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 mt-1">
                     <Link to="/tuiter/edit"><div className="btn wd-rounded-buttons float-right" style={{"background":"black","color":"white","border":"1px solid white"}}>Edit</div></Link>

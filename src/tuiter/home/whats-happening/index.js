@@ -20,7 +20,7 @@ const WhatsHappening = () => {
         <>
             <div className="row">
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2 px-2">
-                    <img className="wd-rounded-images" src="/img/Starship.webp" width="50px" height="50px"/>
+                    <img alt={""} className="wd-rounded-images" src="/img/Starship.webp" width="50px" height="50px"/>
                 </div>
                 <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-10 ps-0">
                     <textarea value={whatsHappening}

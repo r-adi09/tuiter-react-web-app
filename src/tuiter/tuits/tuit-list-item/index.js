@@ -29,7 +29,7 @@ const TuitListItem = ({posts}) =>{
         <div className="list-group-item">
             <div className="row">
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-2">
-                    <img src={posts.image} className="wd-rounded-images" width="50px" height="50px" />
+                    <img alt={""} src={posts.image} className="wd-rounded-images" width="50px" height="50px" />
                 </div>
                 <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 p-0">
                     <span className="wd-font-color">{posts.username}</span>
