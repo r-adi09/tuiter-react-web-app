@@ -26,7 +26,7 @@ export default Tuiter;*/
 import React from "react";
 import './explore/index.css';
 import {Route, Routes} from "react-router";
-import ExploreComponent from "./explore/ExploreComponent";
+
 import ExploreScreen from "./explore/index";
 
 import HomeScreen from "./home";
@@ -49,7 +49,7 @@ function Tuiter(){
         <div>
             <Routes>
                 <Route path="/home"    element={<HomeScreen/>}/>
-                <Route path="/explore" element={<ExploreComponent/>}/>
+                <Route path="/explore" element={<ExploreScreen/>}/>
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/edit" element={<EditProfile/>}/>
             </Routes>
