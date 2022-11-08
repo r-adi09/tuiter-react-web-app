@@ -52,6 +52,7 @@ function Tuiter(){
                 <Route path="/explore" element={<ExploreScreen/>}/>
                 <Route path="/profile" element={<Profile/>}/>
                 <Route path="/edit" element={<EditProfile/>}/>
+                <Route index element={<HomeScreen/>}/>
             </Routes>
 
         </div>
