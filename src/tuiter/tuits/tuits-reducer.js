@@ -1,46 +1,24 @@
+import {CREATE_TUIT, DELETE_TUIT, FIND_ALL_TUITS, UPDATE_TUIT} from "../../services/tuits-thunks";
 
-import tuits from './tuits.json';
-
-const tuitsReducer = (state = tuits, action) => {
+const tuitsReducer = (state = [], action) => {
     switch (action.type) {
-        case 'like-tuit':
-            return state.map(tuit => {
-                if(tuit._id === action.tuit._id) {
-                    if(tuit.liked === true) {
-                        tuit.liked = false;
-                        tuit.heartNumber--;
-                    } else {
-                        tuit.liked = true;
-                        tuit.heartNumber++;
-                    }
-                    return tuit;
-                } else {
-                    return tuit;
-                }
-            });
-
-        case 'delete-tuit':
+        case FIND_ALL_TUITS:
+            return action.tuits;
+        case DELETE_TUIT:
             return state.filter(
                 tuit => tuit._id !== action.tuit._id);
-        case 'create-tuit':
-            const newTuit = {
-                content: action.tuit,
-                _id: (new Date()).getTime() + '',
-                image: "/img/Starship.webp",
-                username: "Elon Musk",
-                handle: "@elonmusk",
-                timeframe: "23h",
-                liked:false,
-                commentNumber: 111,
-                shareNumber: 222,
-                heartNumber: 333,
-            }
+        case CREATE_TUIT:
             return [
-                newTuit,
                 ...state,
+                action.tuit,
             ];
+        case UPDATE_TUIT:
+            console.log('reducer', action);
+            return state.map(
+                tuit => tuit._id === action.tuit._id ?
+                    action.tuit : tuit);
         default:
-            return tuits
+            return state;
     }
 
 }
