@@ -6,7 +6,7 @@ import IconButton from '@mui/material/IconButton';
 import AutoGraphIcon from '@mui/icons-material/AutoGraph';
 import MoodIcon from '@mui/icons-material/Mood';
 import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import {createTuit} from "../../services/tuits-thunks";
+import {createTuit} from "../../../services/tuits-thunks";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening]
         = useState('');

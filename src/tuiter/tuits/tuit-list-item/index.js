@@ -2,7 +2,7 @@ import parse from 'html-react-parser'
 import {useDispatch} from "react-redux";
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
-import {deleteTuit} from "../../services/tuits-thunks";
+import {deleteTuit} from "../../../services/tuits-thunks";
 import  TuitStats from '../tuit-stats';
 const tuitWithImage=({posts})=>{
     return(

@@ -1,3 +1,5 @@
+import {createAsyncThunk}
+    from "@reduxjs/toolkit";
 import * as service from '../services/tuits-service';
 export const CREATE_TUIT = 'CREATE_TUIT';
 export const FIND_ALL_TUITS = 'FIND_ALL_TUITS';
@@ -36,3 +38,8 @@ export const findAllTuits = async (dispatch) => {
         tuits
     });
 }
+
+export const findTuitsThunk = createAsyncThunk(
+    'tuits/findTuits', async () =>
+        await service.findAllTuits()
+)
