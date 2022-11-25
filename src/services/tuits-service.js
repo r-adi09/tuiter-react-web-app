@@ -4,17 +4,45 @@ const API_BASE = process.env.REACT_APP_API_BASE;
 //const TUITS_API = 'https://tuiter-node-server-app-r-adi09.herokuapp.com/api/tuits';
 const TUITS_API = `${API_BASE}/tuits`;
 
+
 console.log('tuits_api',TUITS_API);
 
 export const createTuit = async (tuit) => {
-    const response = await axios.post(TUITS_API, tuit)
+    const currentUser = {
+        "username": "NASA",
+        "handle": "@nasa",
+        "verified": false,
+        "avatar_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/2449px-NASA_logo.svg.png",
+    };
+
+    const templateTuit = {
+        ...currentUser,
+        "topic": "Space",
+        "title": "Title",
+        "time": "2h",
+        "liked": false,
+        "replies": 0,
+        "retuits": 0,
+        "likes": 0,
+        "dislikes":0,
+        "comments":0
+    }
+
+    const newTuit = {
+        ...templateTuit,
+        ...tuit
+
+    }
+    const response = await axios.post(TUITS_API, newTuit)
     return response.data;
 }
 
 export const findAllTuits = async () => {
     const response = await axios.get(TUITS_API);
     const tuits = response.data;
+    console.log(tuits);
     return tuits;
+
 }
 export const deleteTuit = async (tuit) => {
     const response = await axios
