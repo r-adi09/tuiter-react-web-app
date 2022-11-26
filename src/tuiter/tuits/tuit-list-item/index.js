@@ -3,7 +3,7 @@ import {useDispatch} from "react-redux";
 import CloseIcon from '@mui/icons-material/Close';
 import IconButton from '@mui/material/IconButton';
 import  TuitStats from '../tuit-stats';
-import {DELETE_TUIT} from "../../../services/tuits-thunks";
+import {DELETE_TUIT, UPDATE_TUIT} from "../../../services/tuits-thunks";
 const tuitWithImage=({posts})=>{
     return(
         <div className="row mt-3">
@@ -24,7 +24,12 @@ const TuitListItem = ({posts}) =>{
     const deleteTuitHandler = (id) => {
         dispatch(DELETE_TUIT(id));
     }
-
+    const dislikeTuit = () => {
+        dispatch(UPDATE_TUIT({
+            ...posts,
+            dislikes: posts.dislikes + 1
+        }))
+    }
     return(
         <div className="list-group-item">
             <div className="row">
@@ -57,7 +62,12 @@ const TuitListItem = ({posts}) =>{
                     <TuitStats tuit={posts}/>
                 </div>
                 <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-3">
-                    <i className='fa fa-thumbs-down wd-gray-color'>&nbsp;{posts.dislikes}</i>
+                      <span onClick={dislikeTuit}>
+
+                        <i className='fa fa-thumbs-down wd-gray-color'>&nbsp;{posts.dislikes}</i>
+
+    </span>
+
 
                 </div>
 
