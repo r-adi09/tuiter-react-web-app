@@ -1,9 +1,14 @@
 import {useDispatch} from "react-redux";
+import {UPDATE_TUIT} from "../../../services/tuits-thunks";
 
 const TuitStats = ({tuit}) => {
     const dispatch = useDispatch();
     const likeTuit = () => {
-        dispatch({type: 'like-tuit', tuit});
+        //dispatch({type: 'like-tuit', tuit});
+
+        dispatch(UPDATE_TUIT({
+            ...tuit,
+            likes: tuit.likes + 1}))
     };
     return (
         <span onClick={likeTuit}>

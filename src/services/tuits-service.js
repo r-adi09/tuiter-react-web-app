@@ -53,6 +53,7 @@ export const deleteTuit = async (tuit) => {
 export const updateTuit = async (tuit) => {
     console.log('service',tuit);
     const response = await axios
-        .put(`${TUITS_API}/${tuit._id}`, tuit);
-    return response.data;
+        .put(`${TUITS_API}/${tuit._id}`, tuit)
+    console.log(response.data)
+    return tuit;
 }
